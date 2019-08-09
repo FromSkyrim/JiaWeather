@@ -1,0 +1,13 @@
+<litepal>
+
+    <dbname value = "jia_weather"/>
+
+    <version value = "1"/>
+
+    <list>
+        <mapping class="com.jiaweather.android.db.Province" />
+        <mapping class="com.jiaweather.android.db.City" />
+        <mapping class="com.jiaweather.android.db.County" />
+    </list>
+
+</litepal>
