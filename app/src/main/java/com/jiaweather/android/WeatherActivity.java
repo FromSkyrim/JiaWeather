@@ -5,6 +5,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -22,6 +23,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.jiaweather.android.gson.Forecast;
 import com.jiaweather.android.gson.Weather;
+import com.jiaweather.android.service.AutoUpdateService;
 import com.jiaweather.android.util.HttpUtil;
 import com.jiaweather.android.util.Utility;
 
@@ -246,6 +248,8 @@ public class WeatherActivity extends AppCompatActivity {
 
         //Let the weather layout to be seen again
         weatherLayout.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
     private void loadBingPic() {
