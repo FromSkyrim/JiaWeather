@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">JiaWeather</string>
+    <string name="forecast">预报</string>
+    <string name="aqi">空气质量</string>
+    <string name="aqi_index">AQI 指数</string>
+    <string name="pm2_5Index">PM2.5 指数</string>
+    <string name="life">生活建议</string>
 </resources>
